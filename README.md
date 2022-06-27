@@ -27,3 +27,33 @@ npm start
 ```
 
 Navigate to [http://localhost:3000](http://localhost:3000) to view the index page.
+
+## Test card number for credit card payment
+Test Card Number : 4242 4242 4242 4242
+
+Expire Date : Future date from now
+
+# My Comments and answers for Demo Samples
+
+## A paragraph or two about your solution: how does it work? Which Stripe APIs does it use?
+By redirecting customers to Stripe's payment page, the service provider retains the customer's card number and reduces the costs required for security management.
+Also, since Stripe provides other payment functions including credit card and QR code payment, it can provide a high UX service with less development time.
+
+
+## A paragraph or two about how you approached this problem: which docs did you use to complete the project? What challenges did you encounter?
+### 1 Read the Stripe Document, API doc also
+### 2 Check the Stripe GitHub
+### * I also prepared using the checkout.js version
+
+I referred to Stripe Document.
+https://stripe.com/docs/checkout/quickstart
+
+## A paragraph or two about how you might extend this if you were building a more robust instance of the same application.
+
+### 1 To Make Node.js redundant. For instance, use cluster of Node.js process.
+### 2 To make the cart persistence
+#### Cart persistence to allow another server to take over if the Node process goes down in the middle of the process.
+
+
+## Sequence
+![img.png](img.png)
